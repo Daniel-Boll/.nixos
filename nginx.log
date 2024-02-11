@@ -1,0 +1,593 @@
+Feb 09 15:44:16 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 72.
+Feb 09 15:44:16 danielboll-nixos nginx-pre-start[1050]: nginx: the configuration file /nix/store/n98j4m4fs3rrdmdrq74i0l3dw9qxk9dk-nginx.conf syntax is ok
+Feb 09 15:44:16 danielboll-nixos nginx-pre-start[1050]: nginx: configuration file /nix/store/n98j4m4fs3rrdmdrq74i0l3dw9qxk9dk-nginx.conf test is successful
+Feb 09 15:44:16 danielboll-nixos systemd[1]: Started Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished successfully.
+░░ 
+░░ The job identifier is 72.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: Stopping Nginx Web Server...
+░░ Subject: A stop job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 1848.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: nginx.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has successfully entered the 'dead' state.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: Stopped Nginx Web Server.
+░░ Subject: A stop job for unit nginx.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit nginx.service has finished.
+░░ 
+░░ The job identifier is 1848 and the job result is done.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 1848.
+Feb 09 17:22:51 danielboll-nixos nginx-pre-start[79052]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10000080:BIO routines::no such file)
+Feb 09 17:22:51 danielboll-nixos nginx-pre-start[79052]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:22:51 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:22:51 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 1848 and the job result is failed.
+Feb 09 17:23:01 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:23:01 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 2404.
+Feb 09 17:23:01 danielboll-nixos nginx-pre-start[79145]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10000080:BIO routines::no such file)
+Feb 09 17:23:01 danielboll-nixos nginx-pre-start[79145]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:23:01 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:23:01 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:23:01 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 2404 and the job result is failed.
+Feb 09 17:23:11 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:23:11 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 2893.
+Feb 09 17:23:11 danielboll-nixos nginx-pre-start[79215]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10000080:BIO routines::no such file)
+Feb 09 17:23:11 danielboll-nixos nginx-pre-start[79215]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:23:11 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:23:11 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:23:11 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 2893 and the job result is failed.
+Feb 09 17:23:21 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:23:21 danielboll-nixos systemd[1]: nginx.service: Start request repeated too quickly.
+Feb 09 17:23:21 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:23:21 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 2979 and the job result is failed.
+Feb 09 17:35:29 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3065.
+Feb 09 17:35:29 danielboll-nixos nginx-pre-start[82941]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:35:29 danielboll-nixos nginx-pre-start[82941]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:35:29 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:35:29 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:35:29 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3065 and the job result is failed.
+Feb 09 17:35:39 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:35:39 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3151.
+Feb 09 17:35:39 danielboll-nixos nginx-pre-start[83016]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:35:39 danielboll-nixos nginx-pre-start[83016]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:35:39 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:35:39 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:35:39 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3151 and the job result is failed.
+Feb 09 17:35:50 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:35:50 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3237.
+Feb 09 17:35:50 danielboll-nixos nginx-pre-start[83073]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:35:50 danielboll-nixos nginx-pre-start[83073]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:35:50 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:35:50 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:35:50 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3237 and the job result is failed.
+Feb 09 17:36:00 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:36:00 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3323.
+Feb 09 17:36:00 danielboll-nixos nginx-pre-start[83084]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:36:00 danielboll-nixos nginx-pre-start[83084]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:36:00 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:36:00 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:36:00 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3323 and the job result is failed.
+Feb 09 17:36:10 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 4.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:36:10 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3409.
+Feb 09 17:36:10 danielboll-nixos nginx-pre-start[83187]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:36:10 danielboll-nixos nginx-pre-start[83187]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:36:10 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:36:10 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:36:10 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3409 and the job result is failed.
+Feb 09 17:36:20 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:36:20 danielboll-nixos systemd[1]: nginx.service: Start request repeated too quickly.
+Feb 09 17:36:20 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:36:20 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3495 and the job result is failed.
+Feb 09 17:37:21 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3581.
+Feb 09 17:37:21 danielboll-nixos nginx-pre-start[83662]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:37:21 danielboll-nixos nginx-pre-start[83662]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:37:21 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:37:21 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:37:21 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3581 and the job result is failed.
+Feb 09 17:37:31 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:37:31 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3667.
+Feb 09 17:37:31 danielboll-nixos nginx-pre-start[83771]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:37:31 danielboll-nixos nginx-pre-start[83771]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:37:31 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:37:31 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:37:31 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3667 and the job result is failed.
+Feb 09 17:37:41 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:37:41 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3753.
+Feb 09 17:37:41 danielboll-nixos nginx-pre-start[83892]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:37:41 danielboll-nixos nginx-pre-start[83892]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:37:41 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:37:41 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:37:41 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3753 and the job result is failed.
+Feb 09 17:37:52 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:37:52 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3839.
+Feb 09 17:37:52 danielboll-nixos nginx-pre-start[84015]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:37:52 danielboll-nixos nginx-pre-start[84015]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:37:52 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:37:52 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:37:52 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3839 and the job result is failed.
+Feb 09 17:37:55 danielboll-nixos systemd[1]: Stopped Nginx Web Server.
+░░ Subject: A stop job for unit nginx.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit nginx.service has finished.
+░░ 
+░░ The job identifier is 3925 and the job result is done.
+Feb 09 17:37:55 danielboll-nixos systemd[1]: Starting Nginx Web Server...
+░░ Subject: A start job for unit nginx.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has begun execution.
+░░ 
+░░ The job identifier is 3925.
+Feb 09 17:37:55 danielboll-nixos nginx-pre-start[84045]: nginx: [emerg] cannot load certificate "/mnt/certificados/shopvita.com.br/fullchain.pem": BIO_new_file() failed (SSL: error:8000000D:system library::Permission denied:calling fopen(/mnt/certificados/shopvita.com.br/fullchain.pem, r) error:10080002:BIO routines::system lib)
+Feb 09 17:37:55 danielboll-nixos nginx-pre-start[84045]: nginx: configuration file /nix/store/vklkkmm1wskiacrx4gsrwrg6ri8z6hgs-nginx.conf test failed
+Feb 09 17:37:55 danielboll-nixos systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStartPre= process belonging to unit nginx.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Feb 09 17:37:55 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:37:55 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 3925 and the job result is failed.
+Feb 09 17:38:05 danielboll-nixos systemd[1]: nginx.service: Scheduled restart job, restart counter is at 4.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit nginx.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Feb 09 17:38:05 danielboll-nixos systemd[1]: nginx.service: Start request repeated too quickly.
+Feb 09 17:38:05 danielboll-nixos systemd[1]: nginx.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Feb 09 17:38:05 danielboll-nixos systemd[1]: Failed to start Nginx Web Server.
+░░ Subject: A start job for unit nginx.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit nginx.service has finished with a failure.
+░░ 
+░░ The job identifier is 4011 and the job result is failed.
