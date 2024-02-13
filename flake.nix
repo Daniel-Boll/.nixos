@@ -21,7 +21,6 @@
       danielboll-nixos = lib.nixosSystem {
         inherit system;
         modules = [ ./system/configuration.nix ];
-        specialArgs = { inherit stylix; };
       };
     };
     homeConfigurations = {

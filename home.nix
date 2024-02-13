@@ -9,9 +9,15 @@
 
   imports = [
     stylix.homeManagerModules.stylix
+    ./user/terminal/kitty.nix
+    ./user/terminal/foot.nix
+
     ./user/shell/sh.nix
+
     ./user/style/stylix.nix
+
     ./user/app/git/git.nix
-    # ./user/style/appearance.nix
+
+    ./user/wm/hyprland/hyprland.nix
   ];
 }

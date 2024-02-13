@@ -3,104 +3,36 @@
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
 { lib, pkgs, ... }:
-
-
-let
-  username = "danielboll";
-  # tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  session = "${pkgs.hyprland}/bin/Hyprland";
-in {
+{
   imports = [
+    ./boot/boot-loader.nix
     ./hardware-configuration.nix
+    ./hardware/bluetooth.nix
+    ./hardware/nvidia.nix
+    ./hardware/audio.nix
+    ./hardware/opengl.nix
+
+    ./network/networkmanager.nix
+    ./network/hosts.nix
+    ./network/firewall.nix
     ./network/nginx/nginx.nix
+
+    ./X/xserver.nix
+    ./X/xdg.nix
+
+    ./user/user.nix
+    ./user/locale.nix
+    ./user/login.nix
+    ./user/fonts.nix
+
+    ./virtual/docker.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  networking = {
-    hostName = "danielboll-nixos";
-    networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 80 443 8000 3000 4000 ];
-    extraHosts = ''
-      127.0.0.1		new.shopvita.com.br
-      127.0.0.1		dev.shopvita.com.br
-      127.0.0.1		dev.ispsaude.com.br
-      127.0.0.1		dev.arktus.com.br
-      127.0.0.1		services-dev.smartbr.com.br
-    '';
-  };
-
-  time.timeZone = "America/Sao_Paulo";
-  i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    font = "Lat2-Terminus32";
-    useXkbConfig = true;
-  };
-
-  services.xserver = {
-    enable = true;
-    videoDrivers = ["nvidia"];
-    xkb.layout = "br";
-    xkb.variant = "abnt2";
-    libinput.enable = true;
-    displayManager = {
-      sessionCommands = ''
-        xset r rate 250 45
-      '';
-    };
-  };
-
-  services.greetd = {
-    enable = true;
-    settings = {
-      initial_session = {
-        command = "${session}";
-        user = "${username}";
-      };
-      default_session = {
-        command = "${pkgs.hyprland}/bin/Hyprland --config ~/.config/hypr/hyprland.conf";
-      };
-    };
-  };
-
-  virtualisation.docker.enable = true;
-
+  # :sigh:
+  nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "nvidia-x11"
-    "nvidia-settings"
     "idea-ultimate-2023.3.2"
   ];
-
-  # Enable sound.
-  sound.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-
-  hardware = {
-    opengl.enable = true;
-    nvidia.modesetting.enable = true;
-    bluetooth = {
-      enable = true;
-      powerOnBoot = true;
-      settings = {
-        General = { Experimental = true; };
-      };
-    };
-  };
-  services.blueman.enable = true;
-
-  users.users.${username} = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
-    shell = pkgs.nushell;
-  };
 
   environment.systemPackages = with pkgs; [
     # Base
@@ -118,13 +50,13 @@ in {
     # UI
     waybar
     wofi
-    mako
     wtype
     wofi-pass
     wl-clipboard
     hyprpaper
     lxappearance
     nwg-look
+    pyprland
 
     # Terminal apps
     pass
@@ -148,32 +80,9 @@ in {
     whatsapp-for-linux
     # spotifywm
 
-    xdg-utils
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-
     # Libs
     libnotify
   ];
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "Iosevka" "JetBrainsMono" "Noto" "Mononoki" ]; })
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    font-awesome
-    iosevka
-  ];
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal
-      pkgs.xdg-desktop-portal-hyprland
-      pkgs.xdg-desktop-portal-gtk
-    ];
-  };
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";

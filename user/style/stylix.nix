@@ -15,7 +15,7 @@ in
     autoEnable = false;
     polarity = "dark";
 
-    targets.kitty.enable = true;
+    # targets.kitty.enable = true;
     targets.gtk.enable = true;
 
     base16Scheme = theme-path;
@@ -74,6 +74,7 @@ in
 
   home.packages = with pkgs; [
     qt5ct pkgs.libsForQt5.breeze-qt5
+    fnott
   ];
   home.sessionVariables = {
     QT_QPA_PLATFORMTHEME="qt5ct";
