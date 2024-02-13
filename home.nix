@@ -19,5 +19,6 @@
     ./user/app/git/git.nix
 
     ./user/wm/hyprland/hyprland.nix
+    ./user/wm/hyprland/pyprland.nix
   ];
 }

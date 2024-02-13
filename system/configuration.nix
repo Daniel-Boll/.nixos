@@ -56,7 +56,7 @@
     hyprpaper
     lxappearance
     nwg-look
-    pyprland
+    # pyprland
 
     # Terminal apps
     pass

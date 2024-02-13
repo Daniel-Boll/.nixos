@@ -12,6 +12,8 @@ with pkgs;
       exec-once = waybar
       exec-once = blueman-applet
       exec-once = swayidle -w timeout 90 '${config.programs.swaylock.package}/bin/swaylock -f' timeout 210 'suspend-unless-render' resume '${pkgs.hyprland}/bin/hyprctl dispatch dpms on' before-sleep "${config.programs.swaylock.package}/bin/swaylock -f"
+      exec-once = pypr
+      exec-once = foot --server
 
       monitor=HDMI-A-1,1920x1080@144,0x0,auto
       monitor=HDMI-A-1,addreserved,-10,0,0,0
@@ -88,15 +90,15 @@ with pkgs;
       windowrulev2 = workspace special silent,$scratchpad
       windowrulev2 = center,$scratchpad
 
-      # $pavucontrol = class:^(pavucontrol)$
-      # windowrulev2 = float,$pavucontrol
-      # windowrulev2 = size 86% 40%,$pavucontrol
-      # windowrulev2 = move 50% 6%,$pavucontrol
-      # windowrulev2 = workspace special silent,$pavucontrol
-      # windowrulev2 = opacity 0.80,$pavucontrol
+      $pavucontrol = class:^(pavucontrol)$
+      windowrulev2 = float,$pavucontrol
+      windowrulev2 = size 86% 40%,$pavucontrol
+      windowrulev2 = move 50% 6%,$pavucontrol
+      windowrulev2 = workspace special silent,$pavucontrol
+      windowrulev2 = opacity 0.80,$pavucontrol
 
       $mainMod = SUPER
-      $terminal = kitty
+      $terminal = footclient
       $menu = fuzzel
 
       bind = $mainMod, F, fullscreen,
