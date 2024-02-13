@@ -16,7 +16,8 @@
 
     ./user/style/stylix.nix
 
-    ./user/app/git/git.nix
+    ./user/app/git.nix
+    ./user/app/obs.nix
 
     ./user/wm/hyprland/hyprland.nix
     ./user/wm/hyprland/pyprland.nix
