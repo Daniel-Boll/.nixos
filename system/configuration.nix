@@ -21,9 +21,13 @@
     ./X/xdg.nix
 
     ./user/user.nix
+    ./user/dev.nix
     ./user/locale.nix
     ./user/login.nix
     ./user/fonts.nix
+    ./user/apps.nix
+
+    ./security/pam.nix
 
     ./virtual/docker.nix
   ];

@@ -10,7 +10,6 @@
     enable = true;
     extraPortals = [
       xdg-desktop-portal
-      xdg-desktop-portal-hyprland
       xdg-desktop-portal-gtk
     ];
   };

@@ -23,12 +23,12 @@ with pkgs;
       env = WLR_DRM_DEVICES,/dev/dri/card1:/dev/dri/card0
       env = QT_QPA_PLATFORMTHEME,qt5ct
       env = QT_QPA_PLATFORM,wayland
-      env = GDK_BACKEND,wayland,x11
-      env = XDG_CURRENT_DESKTOP,Hyprland
-      env = XDG_SESSION_TYPE,wayland
-      env = XDG_SESSION_DESKTOP,Hyprland
-      env = LIBVA_DRIVER_NAME,nvidia
-      env = GTK_THEME,Adwaita:dark
+      # env = GDK_BACKEND,wayland,x11
+      # env = XDG_CURRENT_DESKTOP,Hyprland
+      # env = XDG_SESSION_TYPE,wayland
+      # env = XDG_SESSION_DESKTOP,Hyprland
+      # env = LIBVA_DRIVER_NAME,nvidia
+      # env = GTK_THEME,Adwaita:dark
       env = XCURSOR_SIZE,24
       env = __NV_PRIME_RENDER_OFFLOAD,1
       env = __NV_PRIME_RENDER_OFFLOAD_PROVIDER,NVIDIA-G0
@@ -165,5 +165,9 @@ with pkgs;
   programs.swaylock = {
     enable = true;
     package = swaylock-effects;
+  };
+
+  services.swayidle = {
+    enable = true;
   };
 }
