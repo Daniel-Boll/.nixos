@@ -101,7 +101,8 @@ with pkgs;
       $terminal = footclient
       $menu = fuzzel
 
-      bind = $mainMod, F, fullscreen,
+      bind = $mainMod, F, fullscreen, 1
+      bind = $mainMod, T, togglegroup
       bind = $mainMod, Return, exec, $terminal
       bind = $mainMod, C, killactive,
       bind = $mainMod, M, exit,
