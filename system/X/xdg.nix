@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     xdg-utils
     xdg-desktop-portal
-    xdg-desktop-portal-gtk
+    # xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
   ];
 
@@ -10,7 +10,7 @@
     enable = true;
     extraPortals = [
       xdg-desktop-portal
-      xdg-desktop-portal-gtk
+      # xdg-desktop-portal-gtk
     ];
   };
 }
