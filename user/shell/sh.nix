@@ -1,4 +1,12 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, ... }: let
+  package = pkgs.zellij;
+  src = pkgs.fetchFromGitHub {
+    owner = "zellij-org";
+    repo = "zellij";
+    rev = "v${package.version}";
+    sha256 = "${package.src.outputHash}";
+  };
+in
 {
   programs.zsh = {
     enable = true;
@@ -76,10 +84,29 @@
   programs.yazi.enable = true;
   programs.carapace.enable = true;
   programs.fzf.enable = true;
+
+  home.file.".config/zellij/themes" = {
+    recursive = true;
+    source = "${src}/zellij-utils/assets/themes";
+  };
+
   programs.zellij = {
+    inherit package;
     enable = true;
     settings = {
-      keybinds.unbind = ["Ctrl h"];
+      theme = "tokyo-night-dark";
+      default_layout = "terminal";
+      keybinds = {
+        unbind = ["Ctrl h"];
+        "shared_except \"locked\"" = {
+          "bind \"Ctrl y\"" = {
+            "LaunchOrFocusPlugin \"file:~/.config/zellij/plugins/room.wasm\"" = {
+              floating = true;
+              ignore_case = true;
+            };
+          };
+        };
+      };
     };
   };
 
