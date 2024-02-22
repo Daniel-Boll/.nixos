@@ -33,6 +33,7 @@ with pkgs;
       env = __NV_PRIME_RENDER_OFFLOAD_PROVIDER,NVIDIA-G0
       env = __GLX_VENDOR_LIBRARY_NAME,nvidia
       env = __VK_LAYER_NV_optimus,NVIDIA_only
+      env = BEMOJI_PICKER_CMD,fuzzel --dmenu
 
       input {
         kb_layout = us
@@ -109,6 +110,7 @@ with pkgs;
 
       bind = $mainMod, R, exec, $menu
       bind = $mainMod, P, exec, wofi-pass
+      bind = $mainMod, E, exec, bemoji
       bind = $mainMod SHIFT, P, exec, pypr toggle pavucontrol && hyprctl dispatch bringactivetotop
       bind = $mainMod, S, exec, grim -g "$(slurp -o)" - | wl-copy
       bind = $mainMod, X, exec, fnottctl dismiss
