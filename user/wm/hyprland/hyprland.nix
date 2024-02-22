@@ -17,8 +17,7 @@ with pkgs;
 
       monitor=HDMI-A-1,1920x1080@144,0x0,auto
       monitor=HDMI-A-1,addreserved,-10,0,0,0
-      monitor=eDP-1,disable
-      # monitor=eDP-1,1920x1080@120,1920x0,auto
+      monitor=eDP-1,1920x1080@120,1920x0,auto,mirror,HDMI-A-1
 
       env = WLR_DRM_DEVICES,/dev/dri/card1:/dev/dri/card0
       env = QT_QPA_PLATFORMTHEME,qt5ct
@@ -122,7 +121,6 @@ with pkgs;
       bind = $mainMod, J, movefocus, d
 
       # Switch workspaces with mainMod + [0-9]
-      bind = $mainMod, 1, movetoworkspace, 1 current
       bind = $mainMod, 1, workspace, 1
       bind = $mainMod, 2, workspace, 2
       bind = $mainMod, 3, workspace, 3
