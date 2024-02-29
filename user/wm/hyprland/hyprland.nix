@@ -9,11 +9,13 @@ with pkgs;
     systemd.enable = true;
     extraConfig = ''
       exec-once = dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
+      exec-once = ${pkgs.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1
       exec-once = waybar
       exec-once = blueman-applet
-      exec-once = swayidle -w timeout 90 '${config.programs.swaylock.package}/bin/swaylock -f' timeout 210 'suspend-unless-render' resume '${pkgs.hyprland}/bin/hyprctl dispatch dpms on' before-sleep "${config.programs.swaylock.package}/bin/swaylock -f"
+      # exec-once = swayidle -w timeout 90 '${config.programs.swaylock.package}/bin/swaylock -f' timeout 210 'suspend-unless-render' resume '${pkgs.hyprland}/bin/hyprctl dispatch dpms on' before-sleep "${config.programs.swaylock.package}/bin/swaylock -f"
       exec-once = pypr
       exec-once = foot --server
+      exec-once = hyprpaper
 
       monitor=HDMI-A-1,1920x1080@144,0x0,auto
       monitor=HDMI-A-1,addreserved,-10,0,0,0
@@ -40,6 +42,23 @@ with pkgs;
         follow_mouse = 2
         repeat_rate = 45
         repeat_delay = 250
+      }
+
+      device:zsa-technology-labs-moonlander-mark-i-keyboard {
+        # us normal layout and us international layout with no dead keys
+        kb_layout = us
+        kb_variant = ,altgr-intl
+      }
+
+      device:at-translated-set-2-keyboard {
+        kb_layout = us,us
+        kb_variant = ,intl
+      }
+
+      device:ideapad-extra-buttons {
+        # Br ABNT2 layout
+        kb_layout = br
+        kb_variant = abnt2
       }
 
       general {
@@ -80,6 +99,7 @@ with pkgs;
       }
 
       animation = workspaces, 0 # Disable workspace animations
+      animation = windows, 0 # Disable window animations
 
       layerrule = blur,waybar
 

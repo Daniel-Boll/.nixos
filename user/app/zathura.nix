@@ -1,5 +1,5 @@
 {...}: {
-  hardware.opengl = {
+  programs.zathura = {
     enable = true;
   };
 }

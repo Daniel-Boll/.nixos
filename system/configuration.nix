@@ -26,8 +26,10 @@
     ./user/login.nix
     ./user/fonts.nix
     ./user/apps.nix
+    ./user/gstreamer.nix
 
     ./security/pam.nix
+    ./security/polkit.nix
 
     ./virtual/docker.nix
   ];

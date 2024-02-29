@@ -16,8 +16,14 @@
       intelBusId = "PCI:0:2:0";
       sync.enable = true;
     };
+    powerManagement = {
+      finegrained = false;
+      enable = false;
+    };
   };
   hardware.opengl = {
+    driSupport = true;
+    driSupport32Bit = true;
     extraPackages = with pkgs; [
       intel-media-driver # LIBVA_DRIVER_NAME=iHD
       vaapiIntel         # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
@@ -25,6 +31,8 @@
       libvdpau-va-gl
     ];
   };
+
+  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
   specialisation.on-the-go.configuration = {
     system.nixos.tags = [ "on-the-go" ];
@@ -35,5 +43,31 @@
     };
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver = {
+    videoDrivers = ["nvidia"];
+    config = ''
+      Section "Device"
+          Identifier  "Intel Graphics"
+          Driver      "intel"
+          #Option      "AccelMethod"  "sna" # default
+          #Option      "AccelMethod"  "uxa" # fallback
+          Option      "TearFree"        "true"
+          Option      "SwapbuffersWait" "true"
+          BusID       "PCI:0:2:0"
+          #Option      "DRI" "2"             # DRI3 is now default
+      EndSection
+
+      Section "Device"
+          Identifier "nvidia"
+          Driver "nvidia"
+          BusID "PCI:1:0:0"
+          Option "AllowEmptyInitialConfiguration"
+      EndSection
+    '';
+    screenSection = ''
+      Option         "metamodes" "nvidia-auto-select +0+0 {ForceFullCompositionPipeline=On}"
+      Option         "AllowIndirectGLXProtocol" "off"
+      Option         "TripleBuffer" "on"
+    '';
+  };
 }
