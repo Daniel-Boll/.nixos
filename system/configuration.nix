@@ -10,6 +10,7 @@
     ./hardware/bluetooth.nix
     ./hardware/nvidia.nix
     ./hardware/audio.nix
+    ./hardware/video.nix
     ./hardware/opengl.nix
 
     ./network/networkmanager.nix
@@ -19,6 +20,7 @@
 
     ./X/xserver.nix
     ./X/xdg.nix
+    ./X/theme.nix
 
     ./user/user.nix
     ./user/dev.nix

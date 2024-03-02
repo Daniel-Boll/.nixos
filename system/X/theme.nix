@@ -1,7 +1,5 @@
 {pkgs,...}: {
   environment.systemPackages = with pkgs; [
-    polkit-kde-agent
+    gnome3.adwaita-icon-theme
   ];
-
-  security.polkit.enable = true;
 }

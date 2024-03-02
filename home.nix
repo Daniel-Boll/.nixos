@@ -22,5 +22,6 @@
 
     ./user/wm/hyprland/hyprland.nix
     ./user/wm/hyprland/pyprland.nix
+    ./user/wm/sway/sway.nix
   ];
 }

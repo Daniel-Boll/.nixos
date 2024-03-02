@@ -44,23 +44,6 @@ with pkgs;
         repeat_delay = 250
       }
 
-      device:zsa-technology-labs-moonlander-mark-i-keyboard {
-        # us normal layout and us international layout with no dead keys
-        kb_layout = us
-        kb_variant = ,altgr-intl
-      }
-
-      device:at-translated-set-2-keyboard {
-        kb_layout = us,us
-        kb_variant = ,intl
-      }
-
-      device:ideapad-extra-buttons {
-        # Br ABNT2 layout
-        kb_layout = br
-        kb_variant = abnt2
-      }
-
       general {
         layout = master
 
