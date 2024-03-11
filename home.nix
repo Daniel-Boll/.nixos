@@ -19,6 +19,7 @@
     ./user/app/git.nix
     ./user/app/obs.nix
     ./user/app/zathura.nix
+    ./user/app/playerctl.nix
 
     ./user/wm/hyprland/hyprland.nix
     ./user/wm/hyprland/pyprland.nix

@@ -84,8 +84,6 @@ with pkgs;
       animation = workspaces, 0 # Disable workspace animations
       animation = windows, 0 # Disable window animations
 
-      layerrule = blur,waybar
-
       $scratchpadsize = size 80% 85%
       $scratchpad = class:^(scratchpad)$
       windowrulev2 = float,$scratchpad

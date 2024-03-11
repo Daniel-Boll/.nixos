@@ -10,7 +10,7 @@
     source-han-sans-japanese
     source-han-serif-japanese
   ];
-  fontconfig.defaultFonts = {
+  fonts.fontconfig.defaultFonts = {
     serif = [ "Noto Serif" "Source Han Serif" ];
     sansSerif = [ "Noto Sans" "Source Han Sans" ];
   };

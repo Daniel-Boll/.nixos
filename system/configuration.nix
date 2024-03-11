@@ -54,6 +54,7 @@
     stow
     rustup
     sqlite
+    zip unzip
 
     # UI
     waybar
@@ -79,6 +80,7 @@
     pueue
     grim
     slurp
+    playerctl
 
     # Apps
     brave

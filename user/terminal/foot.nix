@@ -8,7 +8,7 @@
         dpi-aware = "yes";
       };
       colors = {
-        background = "1a1b26";
+        background = "000000";
         foreground = "c0caf5";
         regular0 = "15161E";
         regular1 = "f7768e";
@@ -26,7 +26,7 @@
         bright5 = "bb9af7";
         bright6 = "7dcfff";
         bright7 = "c0caf5";
-        alpha = "0.7";
+        alpha = "1.0";
       };
     };
   };

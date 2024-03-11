@@ -14,8 +14,8 @@ in
     forceSSL = true;
     http2 = true;
 
-    sslCertificate = "/mnt/certificados/shopvita.com.br/fullchain.pem";
-    sslCertificateKey = "/mnt/certificados/shopvita.com.br/privkey.pem";
+    sslCertificate = "/etc/letsencrypt/live/shopvita.com.br-0002/fullchain.pem";
+    sslCertificateKey = "/etc/letsencrypt/live/shopvita.com.br-0002/privkey.pem";
 
     extraConfig = "client_max_body_size 1G;";
 
