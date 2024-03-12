@@ -7,6 +7,6 @@
 
   imports = [
     ./new-shopvita.nix
-    ./dev-ispsaude.nix
+    # ./dev-ispsaude.nix
   ];
 }

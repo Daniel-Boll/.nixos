@@ -116,6 +116,8 @@ with pkgs;
       bind = $mainMod, S, exec, grim -g "$(slurp -o)" - | wl-copy
       bind = $mainMod, X, exec, fnottctl dismiss
       bind = $mainMod SHIFT, X, exec, fnottctl dismiss all
+      bind = $mainMod, Y, exec, nu /home/danielboll/scripts/keyboard.nu swap
+      bind = $mainMod SHIFT, Y, exec, nu /home/danielboll/scripts/keyboard.nu force_set
 
       # Move focus with mainMod + arrow keys
       bind = $mainMod, H, movefocus, l
