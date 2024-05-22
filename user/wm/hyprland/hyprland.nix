@@ -17,9 +17,9 @@ with pkgs;
       exec-once = foot --server
       exec-once = hyprpaper
 
-      monitor=HDMI-A-1,1920x1080@144,0x0,auto
-      monitor=HDMI-A-1,addreserved,-10,0,0,0
-      monitor=eDP-1,1920x1080@120,1920x0,auto,mirror,HDMI-A-1
+      # monitor=HDMI-A-1,auto,0x0,auto
+      # monitor=HDMI-A-1,addreserved,-10,0,0,0
+      # monitor=eDP-1,1920x1080,1920x0,auto,mirror,HDMI-A-1
 
       env = WLR_DRM_DEVICES,/dev/dri/card1:/dev/dri/card0
       env = QT_QPA_PLATFORMTHEME,qt5ct

@@ -4,5 +4,6 @@
     spotify
     swayidle
     bemoji
+    nodejs_21
   ];
 }
